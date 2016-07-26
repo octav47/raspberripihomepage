@@ -1,0 +1,62 @@
+html {
+    font-family: Ubuntu, serif;
+}
+
+img[rel="weather_pic"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+span[rel="temp_C"] {
+    background-color: transparent;
+    font-size: 180px !important;
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ffffff;
+}
+
+.col.c12.full-height:not(.active) {
+    display: none;
+}
+
+a.btn[rel="show-weather"] {
+    background-color: #6767cd;
+}
+
+a.btn[rel="2"] {
+    background-color: #58d752;
+}
+
+a.btn[rel="3"] {
+    background-color: #d77fa9;
+}
+
+.container > .active {
+    display: none;
+}
+
+.tab.active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+}
+
+#refresh-statusbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffff00;
+}
